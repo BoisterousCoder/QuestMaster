@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Quest Master</title>
+    <script type="text/javascript">
+        var isPublicGame = '{{ isHosting }}';
+        var isPrivateHosting = '{{ isPublicGame }}';
+    </script>
+    <script type="text/javascript" src="/JS/socketIO.js"></script>
+    <script type="text/javascript" src="/JS/main.js"></script>
+    <script type="text/javascript" src="/JS/jqueryMin.js"></script>
+    <script type="text/javascript" src="/JS/peer.js"></script>
+    <link rel='stylesheet' href='stylesheets/game.css'></link>
+</head>
+
+<body id='body'>
+    <canvas id="mainCanvas">Your browser does not support html 5</canvas>
+
+
+    <div id="chatBox">
+        <p id='name'>Name:
+            <input type='text' id='nameInput' autocomplete='off' />
+        </p>
+
+        <ul id='messages'></ul>
+
+        <form action=''>
+            <input id='m' autocomplete='off' />
+            <button> Send </button>
+        </form>
+    </div>
+</body>
+
+</html>

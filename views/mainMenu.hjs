@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript">
+        function switchSite(url){
+            window.location.href += url;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>{{ title }}</h1>
+    <p>Welcome to {{ title }}</p>
+    <button onClick='switchSite("joinPublic")'>Join Public Game</button></br>
+    <button onClick='switchSite("joinPrivate")'>Join Private Game</button></br>
+    <button onClick='switchSite("createPrivate")'>Create Private Game</button></br>
+    <button onClick='switchSite("game2")'>play other game</button>
+</body>
+
+</html>
